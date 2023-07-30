@@ -60,7 +60,7 @@ input {
   border: 2px solid var(--color-primary-l-3);
   border-radius: var(--xs);
 
-  padding: var(--xs) var(--s);
+  padding: var(--s) var(--s);
 
   font-size: 100%;
   font-family: inherit;
