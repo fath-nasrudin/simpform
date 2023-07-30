@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imaginary Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <aside class="leftbar">
+        <p class="source_code"><a href="https://github.com/fath-nasrudin/simpform">Source Code</a></p>
+        <img src="./img/green-leafes-teemu.jpg" alt="background with green leaves">
+        <div>
+          <div class="brand_logo">M</div>
+          <div class="brand_text">ODIN</div>
+        </div>
+        <p class="photo_credit">Photo by <a
+            href="https://unsplash.com/@xteemu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Teemu
+            Paananen</a> on <a
+            href="https://unsplash.com/photos/OOE4xAnBhKo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </p>
+      </aside>
+      <main class="main">
+        <div class="maintop">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas deserunt aperiam, ullam asperiores quos
+            a
+            accusamus iste cumque ipsam eligendi sint, reiciendis veritatis error assumenda nobis, expedita natus.
+            Beatae,
+            natus!</p>
+
+          <p>Lorem ipsum dolor!</p>
+        </div>
+
+        <div class="maincenter">
+          <form id="registerForm" action="#">
+            <section>
+              <h2>Let's do this!</h2>
+              <div class="form-control-container">
+                <div class="form-control">
+                  <label for="firstname">First Name</label>
+                  <input type="text" name="firstname" id="firstname" placeholder="John" required>
+                </div>
+                <div class="form-control">
+                  <label for="lastname">Last Name</label>
+                  <input type="text" name="lastname" id="lastname" placeholder="Doe">
+                </div>
+                <div class="form-control">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" required placeholder="johndoe@example.com">
+                </div>
+                <div class="form-control">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" name="phone" id="phone" placeholder="083123321123">
+                </div>
+                <div class="form-control">
+                  <label for="password">Password</label>
+                  <input type="password" name="password" id="password" required placeholder="password">
+                </div>
+                <div class="form-control">
+                  <label for="password_confirm">Confirm Password</label>
+                  <input type="password" name="password_confirm" id="password_confirm" required placeholder="password">
+                </div>
+              </div>
+            </section>
+          </form>
+        </div>
+
+        <div class="mainbottom">
+          <button type="submit" form="registerForm">Create Account</button>
+          <p>Already have an account? <a href="#">Log In</a></p>
+        </div>
+      </main>
+    </div>
+  </body>
+
+</html>

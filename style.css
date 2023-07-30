@@ -1,0 +1,218 @@
+:root {
+  /* size */
+  /* 4 8 16 32 64 */
+  --xs: 4px;
+  --s: 8px;
+  --m: 16px;
+  --l: 32px;
+  --xl: 64px;
+
+  /* padding */
+  --p-xs: var(--xs);
+  --p-s: var(--s);
+  --p-m: var(--m);
+  --p-l: var(--l);
+  --p-xl: var(--xl);
+
+  /* margin */
+  --m-xs: var(--xs);
+  --m-s: var(--s);
+  --m-m: var(--m);
+  --m-l: var(--l);
+  --m-xl: var(--xl);
+
+  /* gap */
+  --g-xs: var(--xs);
+  --g-s: var(--s);
+  --g-m: var(--m);
+  --g-l: var(--l);
+  --g-xl: var(--xl);
+
+  /* colors */
+  --color-primary-l-1: #fff;
+  --color-primary-l-2: #f9fafb;
+  --color-primary-l-3: #ccc;
+  --color-primary-l-c: #000;
+
+  --color-secondary-l: #596d48;
+  --color-secondary-l-c: #fff;
+
+  --color-success: rgb(0, 161, 0);
+  --color-danger: red;
+  --color-warning: yellow;
+
+  --box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* paragraph margin */
+p+p {
+  margin-top: 16px;
+}
+
+input {
+  height: 1.5rem;
+  border: 2px solid var(--color-primary-l-3);
+  border-radius: var(--xs);
+
+  padding: var(--xs) var(--s);
+
+  font-size: 100%;
+  font-family: inherit;
+
+}
+
+input:focus-visible {
+  outline: 2px solid rgb(115, 115, 253);
+}
+
+input:not(:placeholder-shown):focus-visible {
+  outline: none;
+}
+
+input:not(:placeholder-shown):invalid {
+  border-color: var(--color-danger);
+}
+
+input:not(:placeholder-shown):valid {
+  border-color: var(--color-success);
+}
+
+button {
+  padding: var(--s) var(--l);
+  border-radius: var(--s);
+  border: none;
+  background-color: var(--color-secondary-l);
+  color: var(--color-secondary-l-c);
+  font-size: 100%;
+  font-family: inherit;
+  margin-bottom: var(--m);
+}
+
+button:hover {
+  background-color: #6d8559;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #3e4b32;
+}
+
+a {
+  color: var(--color-secondary-l);
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-primary-l-2);
+}
+
+.container {
+  min-height: 100vh;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.leftbar {
+  flex: 1 0 auto;
+  width: max(300px, 33.3%);
+  position: relative;
+  min-height: 300px;
+}
+
+.leftbar>div {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  background-color: #000000a6;
+  color: white;
+
+  display: flex;
+  gap: var(--xs);
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand_text {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.leftbar a {
+  color: orange;
+}
+
+.photo_credit {
+  color: white;
+  position: absolute;
+  bottom: 32px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.source_code {
+  color: white;
+  position: absolute;
+  bottom: 4px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.378);
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  flex: 1 0 auto;
+  width: max(300px, 66.6%);
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+}
+
+.main>* {
+  padding: 16px 32px;
+}
+
+.maintop {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.maincenter {
+  background-color: var(--color-primary-l-1);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+form>section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--g-l);
+}
+
+.form-control-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: var(--g-m) var(--g-xl);
+}
+
+.form-control {
+  flex: 1 0 min(400px, 40%);
+
+  display: flex;
+  flex-direction: column;
+}
